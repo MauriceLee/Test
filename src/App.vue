@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap";
+@import 'node_modules/bootstrap-vue/src/index.scss';
 .row {
   margin-top: 1rem;
   margin-bottom: 1rem;

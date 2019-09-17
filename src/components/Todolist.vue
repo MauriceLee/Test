@@ -101,7 +101,7 @@ export default {
       visibility: 'all',
       cacheTodo: {},
       cacheTitle: '',
-      count: 0
+      count: JSON.parse(localStorage.getItem('count')) || 0
     }
   },
   methods: {
@@ -173,11 +173,11 @@ export default {
       }
     }
     this.count = c
+    localStorage.setItem('count', JSON.stringify(this.count))
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .completed {
   text-decoration: line-through;
